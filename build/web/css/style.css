@@ -1,0 +1,70 @@
+body {
+    background: url("https://bit.ly/2PSfkzR");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Tahoma;
+    overflow: hidden;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.main-color, .nav-link {
+    color: #007bc2 !important;
+}
+
+.nav-link:hover {
+    color: #007b0f !important;
+}
+
+.centre-tab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+#form-login {
+    display: none;
+}
+
+.main-page {
+    width: 95%;
+    margin: 5px auto;
+}
+
+.hr-title {
+    background: #007bc2 !important;
+    width: 100px;
+    padding-bottom: 5px;
+
+}
+
+.card-img-top {
+    height: 120px !important;
+    width: 200px;
+    margin: 0 auto;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.card-body {
+    text-align: center;
+}

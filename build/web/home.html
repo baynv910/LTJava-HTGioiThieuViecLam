@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hệ thống giới thiệu việc làm</title>
+        <link href="https://bit.ly/39bB9C7" rel="shortcut icon"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS Boostrap 4 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- MAIN CSS -->
+        <link href="css\style.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/home.js"></script>
+    </head>
+    <body>
+        
+        <!---------------------------->
+        <!--         MENU TOP       -->
+        <!---------------------------->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="border-bottom: 2px solid #007bc2; z-index: 999;">
+            <a href="#"> <img class="navbar-brand" src="https://bit.ly/39bB9C7" height="60px"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tin tức</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Hỗ trợ
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Đánh giá Doanh nghiệp</a>
+                      <a class="dropdown-item" href="#">Chọn việc như thế nào?</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Thiết kế CV</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#" data-toggle="modal" data-target="#form-login" >Đăng nhập</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        
+        <!-- == HEADER == -->
+        <header class="masthead text-white text-center" style="margin-top: 70px;">
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto p-5">
+                  <form>
+                      <div class="form-row">
+                      <div class="col-12 col-md-9 mb-2 mb-md-0">
+                          <div class="input-group">
+                              <input type="text" style="font-size: 15px;" class="form-control form-control-lg " aria-label="" placeholder="Nhập từ khóa...">
+                                <div class="input-group-append">
+                                    <select style="font-size: 15px;" class="custom-select form-control-lg" id="linhVuc">
+                                        <option selected disabled>Chọn lĩnh vực...</option>
+                                        <option value="1">Công nghệ Thông tin</option>
+                                        <option value="2">Kế toán</option>
+                                        <option value="3">Luật</option>
+                                        <option value="3">Kinh tế</option>
+                                      </select>
+                                </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <button type="submit" class="btn btn-block btn-primary btn-lg">Tìm kiếm</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </header>
+        <!--= END HEADER =-->
+        
+        <!-- ======================= -->
+        <!--     NHÀ TUYỂN DỤNG      -->
+        
+        <div class="container jumbotron">
+            <div class="row">
+              <div class="col-lg-3">
+                    <h5>Khu vực</h5>
+                    <hr>
+                    <div class="list-group">
+                      <a href="#" class="list-group-item">TP. Hà Nội</a>
+                      <a href="#" class="list-group-item">TP. Hồ Chí Minh</a>
+                      <a href="#" class="list-group-item">Khác</a>
+                    </div>
+                    <br>
+                    <h5>Đối tượng</h5>
+                    <hr>
+                    <div class="list-group">
+                      <a href="#" class="list-group-item">Học sinh - sinh viên</a>
+                      <a href="#" class="list-group-item">Fresher</a>
+                      <a href="#" class="list-group-item">Junior</a>
+                      <a href="#" class="list-group-item">Senior</a>
+                    </div>
+                    <hr>
+                    <div>
+                        Tags:
+                        <a href="#" class="badge badge-light">viecnhe</a>
+                        <a href="#" class="badge badge-light">luongcao</a>
+                    </div>
+                    <hr>
+              </div>
+              <!-- /.col-lg-3 -->
+
+              <div class="col-lg-9">
+                <div class="row">
+                    
+                    <!-- Search result 01 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                     <div class="card h-60">
+                        <a href="#"><div class="card-img-top" style="background: url('https://image.talentnetwork.vn/dhmohcm///news/2018/07/02/1530518456_imageview.jpg');"></div></a>
+                        <div class="card-body">
+                          <h4 class="card-title">
+                            <a href="#">Công ty ABC</a>
+                          </h4>
+                          <h6>2 việc làm | Quận 01</h6>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">★ ★ ★ ★ ☆ 15 <a href="#">đánh giá</a></small>
+                        </div>
+                     </div>
+                    </div>
+                    
+                    <!-- Search result 02 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                     <div class="card h-60">
+                        <a href="#"><div class="card-img-top" style="background: url('https://image.talentnetwork.vn/dhmohcm///news/2018/07/02/1530518167_45.vb-logo.jpg');"></div></a>
+                        <div class="card-body">
+                          <h4 class="card-title">
+                            <a href="#">Công ty ABC</a>
+                          </h4>
+                          <h6>2 việc làm | Quận 01</h6>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">★ ★ ★ ★ ☆ 20 <a href="#">đánh giá</a></small>
+                        </div>
+                     </div>
+                    </div>
+                    
+                    <!-- Search result 03 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                     <div class="card h-60">
+                        <a href="#"><div class="card-img-top" style="background: url('https://image.talentnetwork.vn/dhmohcm///news/2018/07/02/1530518112_33.-jobtest-logo-png.png');"></div></a>
+                        <div class="card-body">
+                          <h4 class="card-title">
+                            <a href="#">Công ty ABC</a>
+                          </h4>
+                          <h6>2 việc làm | Quận 01</h6>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">★ ★ ★ ★ ☆ 16 <a href="#">đánh giá</a></small>
+                        </div>
+                     </div>
+                    </div>
+                    
+                    <!-- Search result 04 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                     <div class="card h-60">
+                        <a href="#"><div class="card-img-top" style="background: url('https://upload.wikimedia.org/wikipedia/vi/2/20/Logo_c%E1%BB%A7a_Vietinbank.png');"></div></a>
+                        <div class="card-body">
+                          <h4 class="card-title">
+                            <a href="#">Công ty ABC</a>
+                          </h4>
+                          <h6>2 việc làm | Quận 01</h6>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">★ ★ ★ ★ ☆ 22 <a href="#">đánh giá</a></small>
+                        </div>
+                     </div>
+                    </div>
+                    
+                    <!-- Search result 05 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                     <div class="card h-60">
+                        <a href="#"><div class="card-img-top" style="background: url('http://image.talentnetwork.vn/dhmohcm///news/2016/07/13/1468418126_donga-bank.jpg');"></div></a>
+                        <div class="card-body">
+                          <h4 class="card-title">
+                            <a href="#">Công ty ABC</a>
+                          </h4>
+                          <h6>2 việc làm | Quận 01</h6>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">★ ★ ★ ★ ☆ 31 <a href="#">đánh giá</a></small>
+                        </div>
+                     </div>
+                    </div>
+                    
+                    <!-- Search result 06 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                     <div class="card h-60">
+                        <a href="#"><div class="card-img-top" style="background: url('https://image.talentnetwork.vn/dhmohcm///news/2018/07/02/1530518861_52.-acb.png');"></div></a>
+                        <div class="card-body">
+                          <h4 class="card-title">
+                            <a href="#">Công ty ABC</a>
+                          </h4>
+                          <h6>2 việc làm | Quận 01</h6>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">★ ★ ★ ★ ☆ 25 <a href="#">đánh giá</a></small>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+              </div>
+              <!-- /.col-lg-9 -->
+
+            </div>
+            <!-- /.row -->
+
+          </div>
+        
+        <!-- ======================= -->
+        
+        <!---------------------------->
+        <!--         TIN TỨC        -->
+        <div class="container jumbotron row mx-auto">
+            <div class="col-12">
+                <h4 class="text-center">TIN TỨC</h4>
+                <hr class="hr-title"/>
+            </div>
+            <div class="col-md-6">
+              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-auto d-none d-lg-block">
+                      <svg class="bd-placeholder-img" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                    <h3 class="mb-0">Featured post</h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-auto d-none d-lg-block">
+                      <svg class="bd-placeholder-img" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">Design</strong>
+                    <h3 class="mb-0">Featured post</h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!---------------------------->
+        
+        <!-- ===================== -->
+        <!-- Các bước liên kết -->
+        <div class="container jumbotron mt-5" id="register">
+            <h2>Đăng ký gioithieuvieclam.com</h2>
+            <div class="tab-content pt-3">
+                <!-- Bước 01 -->
+              <div id="menu1" class="active tab-pane">
+                  <form method="post" action="login">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <select class="custom-select" id="re-user-type" required>
+                                <option selected disabled>Chọn loại tài khoản...</option>
+                                <option value="1">Ứng viên</option>
+                                <option value="2">Nhà tuyển dụng</option>
+                            </select>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 col-cm-12">
+                            <label for="re-unInput">Tên đăng nhập:</label>
+                            <input type="text" class="form-control" id="re-unInput" name="re-un" aria-describedby="re-unHelp" placeholder="Nhập tên đăng nhập..." required>
+                        </div>
+                        <div class="col-md-6 col-cm-12">
+                            <label for="re-emailInput">Email của bạn:</label>
+                            <input type="email" class="form-control" id="re-emailInput" aria-describedby="re-emailHelp" placeholder="Nhập email..." required>
+                            <small id="emailHelp" class="form-text text-muted">Chúng tôi sẽ không gửi email của bạn cho bất cứ ai!</small>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                        
+                        <input type="password" class="form-control mr-1" placeholder="Mật khẩu..." name="re-pw" required>
+                        <input type="password" class="form-control" placeholder="Nhập lại mật khẩu..." name="re-pw-cf" required>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-block">Đăng ký</button>
+                </div>
+              </form>
+              </div>
+                
+                
+        <!-- ===================== -->
+        
+        <!---------------------------->
+        <!--        LOGIN FORM      -->
+        <!---------------------------->
+        
+        <div id="form-login" class="modal" tabindex="-1" role="dialog">
+            <form action="login" method="post">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">ĐĂNG NHẬP</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span onclick="document.getElementById('form-login').style.display='none';"
+        class="close" title="Đóng">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Tên đăng nhập..." name="un" required="">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control" placeholder="Mật khẩu..." name="pw" required="">
+                        </div>
+                        <div style="margin: -10px 0px 10px 3px; text-align: left;"><input type="checkbox" checked="checked" name="remember"> Nhớ mật khẩu?</div>
+                        <button type="submit" class="btn btn-success btn-block">Đăng nhập</button>
+
+                        <div style="padding-top: 5px; text-align: center"><a href="#">Quên mật khẩu?</a> | <a href="#register">Tạo tài khoản?</a></div>
+                    </div>
+                  </div>
+                </div>
+            </form>
+          </div>
+        
+        <!-- Script Boostrap 4 -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
